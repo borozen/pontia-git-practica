@@ -7,8 +7,6 @@ inputs:
     description: "Un texto cualquiera"
     required:  true
     type: text
-    
-
 jobs:
   saludo:
     runs-on: ubuntu-latest
