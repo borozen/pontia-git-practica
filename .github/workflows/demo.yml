@@ -1,0 +1,15 @@
+inputs:
+  environment:
+    description: 'Target deployment environment (staging, production)'
+    required: true
+  version:
+    description: 'Application version to deploy'
+    required: true
+  dry-run:
+    description: 'Run without making actual changes'
+    required: false
+    default: 'false'
+  timeout:
+    description: 'Deployment timeout in seconds'
+    required: false
+    default: '300'
