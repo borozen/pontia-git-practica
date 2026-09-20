@@ -10,7 +10,6 @@ inputs:
 jobs:
   saludo:
     runs-on: ubuntu-latest
-    environment: ${{ inputs.environment }}
     steps:
       - name: Imprimir mensaje
       run:
