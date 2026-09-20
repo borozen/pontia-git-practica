@@ -13,4 +13,4 @@ jobs:
     environment: ${{ inputs.environment }}
     steps:
       - name: Imprimir mensaje
-      
+      run:
