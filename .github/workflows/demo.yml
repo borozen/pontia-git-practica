@@ -2,14 +2,14 @@ on:
   push:
     branches:
     - main
-inputs:
-  envirnment:
+  inputs:
+  environment:
     description: "Un texto cualquiera"
     required:  true
     type: text
-jobs:
-  saludo:
-    runs-on: ubuntu-latest
+  jobs:
+    saludo:
+      runs-on: ubuntu-latest
     steps:
       - name: Imprimir mensaje
-      run:
+      run: echo "Texto: ${{ inputs.environment }}"
