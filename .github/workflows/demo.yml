@@ -5,7 +5,7 @@ on:
         description: "Un texto cualquiera"
         required:  true
         type: string
-jobs:
+  jobs:
     saludo:
       runs-on: ubuntu-latest
     steps:
