@@ -1,19 +1,15 @@
-name: Saludo
-
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
-    inputs:
-      mensaje:
-        description: "Un texto cualquiera"
-        required: true
-        type: string
-
-jobs:
-  saludo:
-    runs-on: ubuntu-latest
+    branches:
+    - main
+  inputs:
+  environment:
+    description: "Un texto cualquiera"
+    required:  true
+    type: string
+  jobs:
+    saludo:
+      runs-on: ubuntu-latest
     steps:
-      - name: Imprimir mensaje
-        run: echo "Texto:$"
+      name: Imprimir mensaje
+      run: echo "Texto:${{ inputs.environment }}"
