@@ -2,10 +2,10 @@ on:
   push:
   workflow_dispatch:
         inputs:
-        environment:
-        description: "Un texto cualquiera"
-        required: true
-        type: string
+          environment:
+            description: "Un texto cualquiera"
+            required: true
+            type: string
 
 jobs:
   saludo:
