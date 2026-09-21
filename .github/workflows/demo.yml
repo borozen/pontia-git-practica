@@ -3,11 +3,12 @@ on:
     inputs:
       environment:
         description: "Un texto cualquiera"
-        required:  true
+        required: true
         type: string
-  jobs:
-    saludo:
-      runs-on: ubuntu-latest
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
     steps:
       - name: Imprimir mensaje
-     run: echo "Texto:${{ inputs.environment }}"
+        run: echo "Texto:${{ inputs.environment }}"
