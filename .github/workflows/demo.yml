@@ -11,5 +11,5 @@ on:
     saludo:
       runs-on: ubuntu-latest
     steps:
-      - name: Imprimir mensaje
+      name: Imprimir mensaje
       run: echo "Texto: ${{ inputs.environment }}"
