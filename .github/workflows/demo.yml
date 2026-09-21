@@ -11,6 +11,6 @@ jobs:
         required: true
         type: string
 
-    steps:
+      steps:
       - name: Imprimir mensaje
         run: echo "Texto: ${{ inputs.environment }}"
